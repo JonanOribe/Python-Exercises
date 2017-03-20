@@ -1,3 +1,4 @@
+
 #Ejemplos sencillos con python
 
 #Ejemplo del clásico "Hola mundo!"
@@ -15,3 +16,27 @@ print (7*4)
 print (21/4)
 
 print (7%2)
+
+#Condicionales
+
+a=10
+
+if a>10:
+    print ("A es mayor que 10")
+elif (a==10):
+    print ("A es igual que 10")
+else:
+    print("A es menor que 10")
+
+#Funciones
+
+def mayorMenor(x):
+
+    if x>10:
+        return ("X es mayor que 10")
+    elif (x==10):
+        return ("X es igual que 10")
+    else:
+        return("X es menor que 10")
+
+print (mayorMenor(12))
