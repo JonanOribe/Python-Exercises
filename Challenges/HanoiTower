@@ -1,0 +1,12 @@
+
+#Solución del ejercicio de la Torre de Hanoi mediante recursividad
+
+def torreHanoi(num_discos,inicial=1,final=3):
+
+    if num_discos:
+
+        torreHanoi(num_discos-1,inicial,6-inicial-final)
+        print ("Coloca el disco %d de la torre %d a la torre %d" % (num_discos,inicial,final))
+        torreHanoi(num_discos-1,6-inicial-final,final)
+
+torreHanoi(num_discos=7)
