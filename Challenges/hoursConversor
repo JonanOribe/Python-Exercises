@@ -1,0 +1,16 @@
+
+#Conversor segundos a horas 
+
+t=int(3682)
+s=int(0) 
+m=int(0) 
+h=int(0)
+
+if(t>59):
+    m=round(t/60)
+    s=t%60
+if(m>59):
+    h=round(m/60)
+    m=m%60
+
+print ("El valor de",t," segundos en horas es de ",h," horas, ",m," minutos y ",s,"segundos")
