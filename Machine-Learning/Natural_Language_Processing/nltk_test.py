@@ -13,3 +13,19 @@ for w in words:
         sentence_with_filter.append(w)
         
 print(sentence_with_filter)
+
+#Example of stem
+
+from nltk.stem import PorterStemmer
+
+ps=PorterStemmer()
+
+example_verbs=["ride","riding","jump","jumping","swimming","swim","eat","eating","ate"]
+
+words=word_tokenize(example)
+
+for w in words:
+    print(ps.stem(w))
+    
+for v in example_verbs:
+    print(ps.stem(v))
