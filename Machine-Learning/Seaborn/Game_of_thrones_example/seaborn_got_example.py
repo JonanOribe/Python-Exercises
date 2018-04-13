@@ -5,5 +5,5 @@ import matplotlib.pyplot as plt
 df=pd.read_csv('battles.csv')
 df.dtypes
 
-sns.set_style("whitegrid")
+sns.set_style("darkgrid")
 example=sns.barplot(x="year",y="major_death",data=df)
